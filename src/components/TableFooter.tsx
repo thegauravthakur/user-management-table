@@ -26,7 +26,7 @@ export function TableFooter({
 }: TableFooterProps) {
   const jumpToPageInputId = useId();
   return (
-    <div className="flex justify-between items-center text-sm mt-2">
+    <footer className="flex justify-between items-center text-sm mt-2">
       <div className="flex items-center gap-x-2">
         <p className="text-gray-800/60">
           Showing {startIndex} to {endIndex} of {totalItems} entries
@@ -84,6 +84,6 @@ export function TableFooter({
           </select>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
